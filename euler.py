@@ -1,5 +1,9 @@
+#marinaescalante
 
-print("great googly moogly this is project euler 7")
+# check long lilne 19 
+
+import math
+
 print("~~~~~")
 print("goal: what is the 10001st prime?")
 print("ex: 1st 6 primes: 2,3,5,7,11,13 -> 6th prime is 13")
@@ -8,11 +12,13 @@ print("~~~~~")
 
 # make a multiple method
 # will return how many multiples a number has
+# start at 2, will always be divisible by 1
 def multiples(num):
 	count = 0
 
-	for i in range(num):
-		if num % (i+1) == 0:
+	for i in range(2, int(math.sqrt(num))):
+	#for i in range(2, num):
+		if num % (i) == 0:
 			count += 1
 
 	return count
@@ -20,7 +26,7 @@ def multiples(num):
 # make a prime method
 # will return true or false for prime
 def prime(num):
-	if multiples(num) > 2:
+	if multiples(num) > 1:
 		return False
 	return True
 
