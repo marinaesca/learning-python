@@ -1,6 +1,6 @@
-#marinaescalante
+#marinaescalante-unfinished
 
-# check long lilne 19 
+# having error when sqrt is applied, maybe typecasting wrong
 
 import math
 
@@ -16,8 +16,8 @@ print("~~~~~")
 def multiples(num):
 	count = 0
 
-	for i in range(2, int(math.sqrt(num))):
-	#for i in range(2, num):
+	#for i in range(2, int(math.sqrt(num))):
+	for i in range(2, num):
 		if num % (i) == 0:
 			count += 1
 
