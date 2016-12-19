@@ -1,3 +1,5 @@
+#marinaescalante-finished
+
 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
@@ -10,7 +12,7 @@ dog = 'Esca-LANTES'
 cat = 'Esca'
 pig = 'Escalante'
 
-litList = [];
+litList = []
 litList.append(bar)
 litList.append(baz)
 litList.append(dog)
