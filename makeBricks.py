@@ -1,4 +1,4 @@
-# marinaescalante & dat finished
+# marinaescalante&dat-finished
 
 #promt: coding bat problem logic-2 make_bricks
 #We want to make a row of bricks that is goal inches long.
