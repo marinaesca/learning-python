@@ -98,6 +98,19 @@ class LinkedListTest(unittest.TestCase):
 
         self.assertEqual(str(ll), "70->80->800->700")
 
+    def test_remove_value_head(self):
+        ll = LinkedList()
+
+        ll.add(1)
+        ll.add(2)
+        ll.add(3)
+
+        self.assertEqual(str(ll), "1->2->3")
+
+        ll.remove(1)
+
+        self.assertEqual(str(ll), "2->3")
+
 
 if __name__ == "__main__":
     unittest.main()
