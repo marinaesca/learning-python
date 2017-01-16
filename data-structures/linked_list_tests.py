@@ -111,6 +111,21 @@ class LinkedListTest(unittest.TestCase):
 
         self.assertEqual(str(ll), "2->3")
 
+    def test_remove_value_mult(self):
+        ll = LinkedList()
+
+        ll.add(1)
+        ll.add(2)
+        ll.add(3)
+        ll.add(1)
+        ll.add(1)
+
+        self.assertEqual(str(ll), "1->2->3->1->1")
+
+        ll.remove(1)
+
+        self.assertEqual(str(ll), "2->3->1->1")
+
 
 if __name__ == "__main__":
     unittest.main()
