@@ -40,6 +40,10 @@ class LinkedList:
 
                 current = current.pointer
 
+    def removeAll(self, value):
+        while (self.contains(value) == True):
+            self.remove(value)
+
     def contains(self, value):
         current = self.head
         while current is not None:

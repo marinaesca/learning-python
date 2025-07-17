@@ -126,6 +126,21 @@ class LinkedListTest(unittest.TestCase):
 
         self.assertEqual(str(ll), "2->3->1->1")
 
+    def test_remove_value_all(self):
+        ll = LinkedList()
+
+        ll.add(1)
+        ll.add(2)
+        ll.add(3)
+        ll.add(1)
+        ll.add(1)
+
+        self.assertEqual(str(ll), "1->2->3->1->1")
+
+        ll.removeAll(1)
+
+        self.assertEqual(str(ll), "2->3")     
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -14,17 +14,24 @@ def check_at_least_one_valid_column(valid_cols, column_names):
 
 
 
-valid_columns_arr_1 = ['cat_breed', 'fur_color', 'eye_color', 'is_shorthair', 'meow_octave']
-input_header_row_1 = ['cat_name', 'fur_color', 'owner_name']
-print('Running check_at_least_one_valid_column... (expecting true')
-print('Here is the input columns we are checking: ' + str(input_header_row_1))
-print('Here is the list of valid columns: ' + str(valid_columns_arr_1))
-print(check_at_least_one_valid_column(valid_columns_arr_1, input_header_row_1))
-print('\n')
+# valid_columns_arr_1 = ['cat_breed', 'fur_color', 'eye_color', 'is_shorthair', 'meow_octave']
+# input_header_row_1 = ['cat_name', 'fur_color', 'owner_name']
+# print('Running check_at_least_one_valid_column... (expecting true')
+# print('Here is the input columns we are checking: ' + str(input_header_row_1))
+# print('Here is the list of valid columns: ' + str(valid_columns_arr_1))
+# print(check_at_least_one_valid_column(valid_columns_arr_1, input_header_row_1))
+# print('\n')
 
-valid_columns_arr_2 = ['cat_breed', 'fur_color', 'eye_color', 'is_shorthair', 'meow_octave']
-input_header_row_2 = ['cat_name', 'owner_name']
-print('Running check_at_least_one_valid_column... (expecting false)')
-print('Here is the input columns we are checking: ' + str(input_header_row_2))
-print('Here is the list of valid columns: ' + str(valid_columns_arr_2))
-print(check_at_least_one_valid_column(valid_columns_arr_2, input_header_row_2))
+# valid_columns_arr_2 = ['cat_breed', 'fur_color', 'eye_color', 'is_shorthair', 'meow_octave']
+# input_header_row_2 = ['cat_name', 'owner_name']
+# print('Running check_at_least_one_valid_column... (expecting false)')
+# print('Here is the input columns we are checking: ' + str(input_header_row_2))
+# print('Here is the list of valid columns: ' + str(valid_columns_arr_2))
+# print(check_at_least_one_valid_column(valid_columns_arr_2, input_header_row_2))
+
+
+s = '1989'
+for s_index in range(len(s)):
+	num = int(s[s_index])
+	tenth_power = len(s) - s_index
+	print(str(num) + ' ' + str(tenth_power))
